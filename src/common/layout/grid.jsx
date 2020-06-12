@@ -5,10 +5,11 @@ export default class Grid extends Component {
   toCssClasses(numbers) {
     const cols = numbers ? numbers.split(' ') : []
     let classes = ''
-    if(col[0]) classes += `col-xs-${col[0]}`
-    if(col[1]) classes += ` col-sm-${col[1]}`
-    if(col[2]) classes += ` col-md-${col[2]}`
-    if(col[3]) classes += ` col-lg-${col[3]}`
+
+    if(cols[0]) classes += `col-xs-${cols[0]}`
+    if(cols[1]) classes += ` col-sm-${cols[1]}`
+    if(cols[2]) classes += ` col-md-${cols[2]}`
+    if(cols[3]) classes += ` col-lg-${cols[3]}`
 
     return classes
   }
